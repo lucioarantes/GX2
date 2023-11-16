@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <#if grupocmp.getSiblings()?has_content>
+	        <#list grupocmp.getSiblings() as cur_grupocmp>
+             <div class="col-4">
+             <div class="card">
+             <img class="card-img-top" src="..." alt="Card image cap">
+             <div class="card-body">
+                <#if (cur_grupocmp.Text18592724.getData())??>
+	            <h5 class="card-title">${cur_grupocmp.Text18592724.getData()}</h5>
+                </#if>	
+                <#if (cur_grupocmp.Image87353060.getData())?? && cur_grupocmp.Image87353060.getData() != "">
+	            <img alt="${cur_grupocmp.Image87353060.getAttribute("alt")}" data-fileentryid="${cur_grupocmp.Image87353060.getAttribute("fileEntryId")}" src="${cur_grupocmp.Image87353060.getData()}" />
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </#if>
+            </div>
+            </div>
+            </div>
+            </#list>
+            </#if>
+    </div>
+</div>

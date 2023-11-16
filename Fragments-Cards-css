@@ -1,0 +1,9 @@
+.card {
+	background-color: red;
+}
+
+.card-title {
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+}

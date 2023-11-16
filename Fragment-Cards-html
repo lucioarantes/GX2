@@ -1,0 +1,22 @@
+<section>
+ 	<article class="box box-default">
+	<div class="container bootstrap">
+		[#list 1..configuration.numbersCards as index]
+    <div class="col-4">
+     <div class="card">
+			<lfr-editable id="unique-id" type="image">
+      <img class="card-img-top" src="..." alt="Card image cap">
+			</lfr-editable>
+			 <div class="card-body">
+				 <lfr-editable id="card-title" type="text">
+	       <h5 class="card-title">Card title 1</h5>
+				 </lfr-editable> 
+	        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Clique</a>
+        </div>
+       </div>
+      </div>
+     </div>
+   [/#list]
+	</article>
+  </section>
